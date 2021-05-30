@@ -193,9 +193,33 @@ body {
 }
 
 
-.index {
+.index.container {
   display: grid;
+  height: 100vh;
 
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
+}
+
+.index .header {
+  grid-column: 1 / 13;
+}
+
+.index .sidebar {
+  grid-row: 2 / 12;
+}
+
+.index .main {
+  grid-column: 3 / 10;
+  grid-row: 2 / 12;
+}
+
+.index .ads {
+  grid-column:  11 / 13;
+  grid-row: 2 / 12;
+}
+
+.index .footer {
+  grid-column: 1 / 13;
+  grid-row: 12 / 13;
 }
